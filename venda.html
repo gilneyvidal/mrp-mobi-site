@@ -1,45 +1,157 @@
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;pt-BR&quot; class=&quot;scroll-smooth&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Página de Recrutamento Profissional para MRP Mobi&lt;/title&gt;
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Recrutamento Profissional para MRP Mobi</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Biblioteca de Animação (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Configuração de Estilo Customizado com Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'mrp-blue': '#001f3f',
+                        'mrp-gold': '#FFD700',
+                        'mrp-light': '#F5F5F5',
+                        'mrp-dark-bg': '#001021',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-bg {
+            background: linear-gradient(145deg, #001f3f 0%, #001021 100%);
+        }
+    </style>
+</head>
 
+<body class="bg-mrp-dark-bg text-mrp-light font-sans">
 
-&lt;/head&gt;
-
-&lt;body class=&quot;bg-mrp-dark-bg text-mrp-light font-sans&quot;&gt;
-
-        <!-- Plano Trimestral -->
-        <div class="bg-mrp-blue p-8 rounded-lg text-center flex flex-col">
-            <h3 class="text-2xl font-bold">TRIMESTRAL</h3>
-            <p class="text-5xl font-black my-4">R$ 247</p>
-            <p class="text-mrp-gold font-semibold">(equivale a R$ 82,33/mês)</p>
-            <p class="flex-grow mt-2">Um bom desconto para quem está comprometido.</p>
-             <a href="https://wa.me/5511968649673?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Plano%20Trimestral%20da%20p%C3%A1gina%20de%20recrutamento%20MRP%20Mobi." target="_blank" class="mt-6 bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition duration-300">Quero o Plano Trimestral</a>
+    <!-- =========== SEÇÃO 1: HERÓI =========== -->
+    <section id="inicio" class="gradient-bg min-h-screen flex items-center justify-center text-center p-6">
+        <div data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider">Pare de Enviar PDFs!</h1>
+            <h2 class="text-2xl md:text-4xl font-semibold text-mrp-gold mt-2">Tenha uma Página de Recrutamento Profissional que Trabalha por Si 24h por Dia.</h2>
+            <p class="max-w-3xl mx-auto mt-4 text-lg">Transforme o seu link de convite numa máquina de registos automática, profissional e que impressiona.</p>
+            <a href="#precos" class="mt-8 bg-mrp-gold text-mrp-blue font-bold text-xl py-4 px-10 rounded-full inline-block hover:bg-yellow-300 transform hover:scale-105 transition duration-300 shadow-lg">
+                QUERO A MINHA PÁGINA AGORA
+            </a>
         </div>
+    </section>
 
-        <!-- Plano Semestral (DESTAQUE) -->
-        <div class="bg-mrp-gold text-mrp-blue p-8 rounded-lg text-center flex flex-col border-4 border-yellow-300 transform scale-105">
-             <span class="bg-mrp-blue text-white font-bold py-1 px-4 rounded-full self-center mb-4">MAIS POPULAR</span>
-            <h3 class="text-2xl font-bold">SEMESTRAL</h3>
-            <p class="text-5xl font-black my-4">R$ 347</p>
-            <p class="font-semibold">(equivale a R$ 57,83/mês)</p>
-            <p class="flex-grow mt-2">O favorito dos líderes! Pague 5 meses e leve 6!</p>
-             <a href="https://wa.me/5511968649673?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Plano%20Semestral%20da%20p%C3%A1gina%20de%20recrutamento%20MRP%20Mobi." target="_blank" class="mt-6 bg-mrp-blue text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-900 transition duration-300">Quero o Plano Semestral</a>
+    <!-- =========== SEÇÃO 2: PROBLEMA E SOLUÇÃO =========== -->
+    <section id="problema" class="py-20 px-6">
+        <div class="container mx-auto max-w-5xl grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h3 class="text-3xl font-bold mb-4">A Forma <span class="text-red-500">Amadora</span>...</h3>
+                <p class="text-lg">Você partilha o seu link e o PDF da empresa, mas poucas pessoas se registam?</p>
+                <ul class="list-disc list-inside mt-4 space-y-2">
+                    <li>PDFs são impessoais e não têm o seu link direto.</li>
+                    <li>Links soltos parecem spam e geram desconfiança.</li>
+                    <li>Você perde recrutas que não sabem o que fazer.</li>
+                </ul>
+            </div>
+            <div class="bg-mrp-blue p-8 rounded-lg border-2 border-mrp-gold" data-aos="fade-left">
+                <h3 class="text-3xl font-bold mb-4">A Solução <span class="text-mrp-gold">Profissional</span></h3>
+                <p class="text-lg">Uma página de apresentação idêntica à da empresa, mas construída para <span class="font-bold">converter para SI</span>.</p>
+                <ul class="list-disc list-inside mt-4 space-y-2">
+                    <li>Visual moderno e animado que impressiona.</li>
+                    <li>Seu botão de registo e QR Code em destaque.</li>
+                    <li>Funciona perfeitamente no telemóvel.</li>
+                    <li>Transmite autoridade e confiança.</li>
+                </ul>
+            </div>
         </div>
-
-        <!-- Plano Anual -->
-        <div class="bg-mrp-blue p-8 rounded-lg text-center flex flex-col">
-            <span class="bg-mrp-gold text-mrp-blue font-bold py-1 px-4 rounded-full self-center mb-4">MELHOR CUSTO-BENEFÍCIO</span>
-            <h3 class="text-2xl font-bold">ANUAL</h3>
-            <p class="text-5xl font-black my-4">R$ 537</p>
-            <p class="text-mrp-gold font-semibold">(apenas R$ 44,75/mês)</p>
-            <p class="flex-grow mt-2">A escolha inteligente para quem pensa a longo prazo.</p>
-             <a href="https://wa.me/5511968649673?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Plano%20Anual%20da%20p%C3%A1gina%20de%20recrutamento%20MRP%20Mobi." target="_blank" class="mt-6 bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition duration-300">Quero o Plano Anual</a>
+    </section>
+    
+    <!-- =========== SEÇÃO 3: DEMONSTRAÇÃO =========== -->
+    <section id="demo" class="py-20 px-6 bg-mrp-blue text-center">
+        <div class="container mx-auto max-w-4xl" data-aos="zoom-in">
+            <h2 class="text-4xl font-bold mb-4">Não Acredite, Veja com os Seus Próprios Olhos.</h2>
+            <p class="text-xl mb-8">Esta é a página exata que os seus futuros recrutas verão, mas com o seu link de convite.</p>
+            <a href="https://gilneyvidal.github.io/mrp-mobi-site/" target="_blank"
+               class="bg-white text-mrp-blue font-bold text-xl py-4 px-10 rounded-full inline-block hover:bg-gray-200 transform hover:scale-105 transition duration-300 shadow-lg">
+                VER DEMONSTRAÇÃO AO VIVO
+            </a>
         </div>
-    </div>
-</div>
+    </section>
 
-&lt;/body&gt;
-&lt;/html&gt;
+
+    <!-- =========== SEÇÃO 4: PREÇOS =========== -->
+    <section id="precos" class="py-20 px-6">
+        <div class="container mx-auto max-w-6xl" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-center mb-12">Escolha o Plano Ideal para o Seu Crescimento</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Plano Mensal -->
+                <div class="bg-mrp-blue p-8 rounded-lg text-center flex flex-col">
+                    <h3 class="text-2xl font-bold">MENSAL</h3>
+                    <p class="text-5xl font-black my-4">R$ 97<span class="text-xl font-normal">/mês</span></p>
+                    <p class="flex-grow">Ideal para começar e testar o poder da ferramenta.</p>
+                    <a href="https://wa.me/5511968649673?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Plano%20Mensal%20da%20p%C3%A1gina%20de%20recrutamento%20MRP%20Mobi." target="_blank" class="mt-6 bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition duration-300">Quero o Plano Mensal</a>
+                </div>
+
+                <!-- Plano Trimestral -->
+                <div class="bg-mrp-blue p-8 rounded-lg text-center flex flex-col">
+                    <h3 class="text-2xl font-bold">TRIMESTRAL</h3>
+                    <p class="text-5xl font-black my-4">R$ 247</p>
+                    <p class="text-mrp-gold font-semibold">(equivale a R$ 82,33/mês)</p>
+                    <p class="flex-grow mt-2">Um bom desconto para quem está comprometido.</p>
+                     <a href="https://wa.me/5511968649673?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Plano%20Trimestral%20da%20p%C3%A1gina%20de%20recrutamento%20MRP%20Mobi." target="_blank" class="mt-6 bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition duration-300">Quero o Plano Trimestral</a>
+                </div>
+
+                <!-- Plano Semestral (DESTAQUE) -->
+                <div class="bg-mrp-gold text-mrp-blue p-8 rounded-lg text-center flex flex-col border-4 border-yellow-300 transform scale-105">
+                     <span class="bg-mrp-blue text-white font-bold py-1 px-4 rounded-full self-center mb-4">MAIS POPULAR</span>
+                    <h3 class="text-2xl font-bold">SEMESTRAL</h3>
+                    <p class="text-5xl font-black my-4">R$ 347</p>
+                    <p class="font-semibold">(equivale a R$ 57,83/mês)</p>
+                    <p class="flex-grow mt-2">O favorito dos líderes! Pague 5 meses e leve 6!</p>
+                     <a href="https://wa.me/5511968649673?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Plano%20Semestral%20da%20p%C3%A1gina%20de%20recrutamento%20MRP%20Mobi." target="_blank" class="mt-6 bg-mrp-blue text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-900 transition duration-300">Quero o Plano Semestral</a>
+                </div>
+
+                <!-- Plano Anual -->
+                <div class="bg-mrp-blue p-8 rounded-lg text-center flex flex-col">
+                    <span class="bg-mrp-gold text-mrp-blue font-bold py-1 px-4 rounded-full self-center mb-4">MELHOR CUSTO-BENEFÍCIO</span>
+                    <h3 class="text-2xl font-bold">ANUAL</h3>
+                    <p class="text-5xl font-black my-4">R$ 537</p>
+                    <p class="text-mrp-gold font-semibold">(apenas R$ 44,75/mês)</p>
+                    <p class="flex-grow mt-2">A escolha inteligente para quem pensa a longo prazo.</p>
+                     <a href="https://wa.me/5511968649673?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Plano%20Anual%20da%20p%C3%A1gina%20de%20recrutamento%20MRP%20Mobi." target="_blank" class="mt-6 bg-gray-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition duration-300">Quero o Plano Anual</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== RODAPÉ =========== -->
+    <footer class="bg-mrp-dark-bg text-center p-4 border-t border-mrp-blue">
+        <p class="text-sm text-gray-500">&copy; 2025 Páginas Profissionais MRP - Um serviço de Vidal Design Solutions.</p>
+    </footer>
+    
+    <!-- Script da Biblioteca de Animação (AOS) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+    </script>
+
+</body>
+</html>
