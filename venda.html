@@ -39,14 +39,35 @@
         .gradient-bg {
             background: linear-gradient(145deg, #001f3f 0%, #001021 100%);
         }
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        .content-on-top {
+            position: relative;
+            z-index: 1;
+        }
+        .faq-question {
+            cursor: pointer;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
     </style>
 </head>
 
 <body class="bg-mrp-dark-bg text-mrp-light font-sans">
 
     <!-- =========== SEÇÃO 1: HERÓI =========== -->
-    <section id="inicio" class="gradient-bg min-h-screen flex items-center justify-center text-center p-6">
-        <div data-aos="fade-up">
+    <section id="inicio" class="gradient-bg min-h-screen flex items-center justify-center text-center p-6 relative">
+        <div id="particles-js"></div>
+        <div class="content-on-top" data-aos="fade-up">
             <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider">Pare de Enviar PDFs!</h1>
             <h2 class="text-2xl md:text-4xl font-semibold text-mrp-gold mt-2">Tenha uma Página de Recrutamento Profissional que Trabalha por Si 24h por Dia.</h2>
             <p class="max-w-3xl mx-auto mt-4 text-lg">Transforme o seu link de convite numa máquina de registos automática, profissional e que impressiona.</p>
@@ -93,14 +114,44 @@
         </div>
     </section>
 
+    <!-- =========== NOVA SEÇÃO: PROVA SOCIAL (TESTEMUNHOS) =========== -->
+    <section id="testemunhos" class="py-20 px-6">
+        <div class="container mx-auto max-w-5xl text-center" data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-4">Líderes de Equipa Já Estão a Usar</h2>
+            <p class="text-xl mb-12">Veja o que dizem sobre esta ferramenta.</p>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="bg-mrp-blue p-6 rounded-lg border border-mrp-gold/50">
+                    <p class="text-lg italic">"Desde que comecei a usar a minha página, o número de registos na minha equipa duplicou. As pessoas sentem mais confiança e o processo ficou muito mais profissional."</p>
+                    <p class="text-mrp-gold font-bold mt-4">- João L., Líder de Equipa</p>
+                </div>
+                <div class="bg-mrp-blue p-6 rounded-lg border border-mrp-gold/50">
+                    <p class="text-lg italic">"Fantástico! Agora posso partilhar um único link que tem tudo o que a pessoa precisa para se decidir e registar. Poupa-me imenso tempo e os resultados são visíveis."</p>
+                    <p class="text-mrp-gold font-bold mt-4">- Maria S., Divulgadora</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- =========== SEÇÃO 4: PREÇOS =========== -->
-    <section id="precos" class="py-20 px-6">
+    <!-- =========== SEÇÃO 4: PREÇOS (VERSÃO OTIMIZADA) =========== -->
+    <section id="precos" class="py-20 px-6 bg-mrp-blue">
         <div class="container mx-auto max-w-6xl" data-aos="fade-up">
-            <h2 class="text-4xl font-bold text-center mb-12">Escolha o Plano Ideal para o Seu Crescimento</h2>
+            <h2 class="text-4xl font-bold text-center mb-4">Um Investimento no Seu Sucesso</h2>
+            <p class="text-xl text-center mb-12">Escolha o plano ideal para o seu crescimento.</p>
+            
+            <!-- O que está incluído -->
+            <div class="max-w-md mx-auto bg-mrp-dark-bg p-6 rounded-lg mb-12">
+                <h4 class="text-xl font-bold text-center text-mrp-gold mb-4">Todos os planos incluem:</h4>
+                <ul class="space-y-2 text-center">
+                    <li>✓ Página Profissional e Animada</li>
+                    <li>✓ Link de Registo e QR Code Pessoais</li>
+                    <li>✓ Hospedagem Gratuita e Segura</li>
+                    <li>✓ Otimizado para Telemóveis</li>
+                </ul>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Plano Mensal -->
-                <div class="bg-mrp-blue p-8 rounded-lg text-center flex flex-col">
+                <div class="bg-mrp-dark-bg p-8 rounded-lg text-center flex flex-col">
                     <h3 class="text-2xl font-bold">MENSAL</h3>
                     <p class="text-5xl font-black my-4">R$ 97<span class="text-xl font-normal">/mês</span></p>
                     <p class="flex-grow">Ideal para começar e testar o poder da ferramenta.</p>
@@ -108,7 +159,7 @@
                 </div>
 
                 <!-- Plano Trimestral -->
-                <div class="bg-mrp-blue p-8 rounded-lg text-center flex flex-col">
+                <div class="bg-mrp-dark-bg p-8 rounded-lg text-center flex flex-col">
                     <h3 class="text-2xl font-bold">TRIMESTRAL</h3>
                     <p class="text-5xl font-black my-4">R$ 247</p>
                     <p class="text-mrp-gold font-semibold">(equivale a R$ 82,33/mês)</p>
@@ -127,7 +178,7 @@
                 </div>
 
                 <!-- Plano Anual -->
-                <div class="bg-mrp-blue p-8 rounded-lg text-center flex flex-col">
+                <div class="bg-mrp-dark-bg p-8 rounded-lg text-center flex flex-col">
                     <span class="bg-mrp-gold text-mrp-blue font-bold py-1 px-4 rounded-full self-center mb-4">MELHOR CUSTO-BENEFÍCIO</span>
                     <h3 class="text-2xl font-bold">ANUAL</h3>
                     <p class="text-5xl font-black my-4">R$ 537</p>
@@ -138,18 +189,99 @@
             </div>
         </div>
     </section>
+    
+    <!-- =========== NOVA SEÇÃO: FAQ (PERGUNTAS FREQUENTES) =========== -->
+    <section id="faq" class="py-20 px-6">
+        <div class="container mx-auto max-w-3xl" data-aos="fade-up">
+            <h2 class="text-4xl font-bold text-center mb-12">Dúvidas Comuns</h2>
+            <div class="space-y-4" id="faq-container">
+                <!-- Pergunta 1 -->
+                <div class="bg-mrp-blue rounded-lg">
+                    <div class="faq-question p-6 flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Como recebo a minha página?</h4>
+                        <span class="text-mrp-gold text-2xl transform transition-transform duration-300">+</span>
+                    </div>
+                    <div class="faq-answer px-6 pb-4 text-mrp-light/80">
+                        <p>Após a confirmação do pagamento, você receberá um link único e exclusivo para a sua página (ex: seusite.com/seu-nome) em até 24 horas. É só começar a partilhar!</p>
+                    </div>
+                </div>
+                <!-- Pergunta 2 -->
+                <div class="bg-mrp-blue rounded-lg">
+                    <div class="faq-question p-6 flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">Preciso de ter conhecimentos técnicos?</h4>
+                        <span class="text-mrp-gold text-2xl transform transition-transform duration-300">+</span>
+                    </div>
+                    <div class="faq-answer px-6 pb-4 text-mrp-light/80">
+                        <p>Não! Zero conhecimento técnico necessário. Nós tratamos de tudo. Você só precisa de partilhar o link que lhe entregamos.</p>
+                    </div>
+                </div>
+                <!-- Pergunta 3 -->
+                <div class="bg-mrp-blue rounded-lg">
+                    <div class="faq-question p-6 flex justify-between items-center">
+                        <h4 class="text-xl font-semibold">E se o meu link de convite mudar?</h4>
+                        <span class="text-mrp-gold text-2xl transform transition-transform duration-300">+</span>
+                    </div>
+                    <div class="faq-answer px-6 pb-4 text-mrp-light/80">
+                        <p>Basta entrar em contacto connosco. A primeira alteração é gratuita. As seguintes têm uma pequena taxa de manutenção.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- =========== RODAPÉ =========== -->
     <footer class="bg-mrp-dark-bg text-center p-4 border-t border-mrp-blue">
         <p class="text-sm text-gray-500">&copy; 2025 Páginas Profissionais MRP - Um serviço de Vidal Design Solutions.</p>
     </footer>
     
+    <!-- Script da Biblioteca de Partículas -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
     <!-- Script da Biblioteca de Animação (AOS) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      // Inicializa Animações
       AOS.init({
         duration: 800,
         once: true,
+      });
+
+      // Inicializa Partículas
+      particlesJS("particles-js", {
+        "particles": {
+          "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+          "color": { "value": "#FFD700" },
+          "shape": { "type": "circle" },
+          "opacity": { "value": 0.5, "random": false },
+          "size": { "value": 3, "random": true },
+          "line_linked": { "enable": true, "distance": 150, "color": "#FFD700", "opacity": 0.4, "width": 1 },
+          "move": { "enable": true, "speed": 2, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true },
+          "modes": { "repulse": { "distance": 100, "duration": 0.4 }, "push": { "particles_nb": 4 } }
+        },
+        "retina_detect": true
+      });
+
+      // Lógica para o FAQ
+      const faqContainer = document.getElementById('faq-container');
+      faqContainer.addEventListener('click', function(e) {
+        const question = e.target.closest('.faq-question');
+        if (question) {
+            const answer = question.nextElementSibling;
+            const icon = question.querySelector('span');
+            
+            if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+                answer.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.style.transform = 'rotate(45deg)';
+            }
+        }
       });
     </script>
 
