@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRP Mobi - Apresentação de Negócios</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Biblioteca de Ícones (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Configuração de Estilo Customizado com Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'mrp-blue': '#001f3f', // Azul Marinho do PDF
+                        'mrp-gold': '#FFD700', // Dourado para destaque
+                        'mrp-light': '#F5F5F5', // Branco/Cinza claro para textos
+                        'mrp-dark-bg': '#001021', // Fundo ainda mais escuro para contraste
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Cada 'section' simulará um slide do PDF */
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 1.5rem;
+            border-bottom: 1px solid #1e3a5f;
+        }
+    </style>
+</head>
+
+<body class="bg-mrp-dark-bg text-mrp-light font-sans">
+
+    <!-- =========== PÁGINA 1: O QUE VOCÊ BUSCA? =========== -->
+    <section id="inicio" class="bg-mrp-blue">
+        <div class="text-center max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <!-- IMAGEM 1: Altere o nome do arquivo se precisar -->
+                <img src="images/carro-sonhos.jpg" alt="Carro esportivo vermelho" class="rounded-lg shadow-lg w-full h-full object-cover aspect-video">
+                <!-- IMAGEM 2: Altere o nome do arquivo se precisar -->
+                <img src="images/casa-sonhos.jpg" alt="Casa moderna com gramado" class="rounded-lg shadow-lg w-full h-full object-cover aspect-video">
+                <!-- IMAGEM 3: Altere o nome do arquivo se precisar -->
+                <img src="images/liberdade-financeira.jpg" alt="Pessoa relaxando na praia" class="rounded-lg shadow-lg w-full h-full object-cover aspect-video">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold uppercase tracking-wider mb-4">O que você busca para sua vida hoje?</h1>
+            <div class="flex flex-wrap justify-center gap-8 text-mrp-gold font-semibold text-lg">
+                <span>CARRO DOS SONHOS</span>
+                <span>CASA DOS SONHOS</span>
+                <span>LIBERDADE FINANCEIRA</span>
+            </div>
+            <!-- LOGO 1: Altere o nome do arquivo se precisar -->
+            <img src="images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto mt-10 h-12 w-auto">
+        </div>
+    </section>
+
+    <!-- =========== PÁGINA 2: 3 OPÇÕES =========== -->
+    <section id="opcoes" class="bg-mrp-dark-bg">
+        <div class="text-center max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold uppercase mb-8">Independente da sua busca, você sempre terá 3 opções:</h2>
+            <div class="text-left space-y-6 text-lg">
+                <p><span class="text-mrp-gold font-bold">1. Um emprego tradicional:</span> Onde trabalha dentro de um sistema 40/40/40 (40 horas por semana, por 40 anos, para se aposentar com 40% do que já não era suficiente).</p>
+                <p><span class="text-mrp-gold font-bold">2. Seu próprio negócio:</span> Que requer alto investimento inicial e conhecimento, assumindo todos os riscos.</p>
+                <div class="bg-mrp-blue p-6 rounded-lg border-2 border-mrp-gold">
+                    <p><span class="text-mrp-gold font-bold">3. MRP MOBI:</span> A mobilidade que te enriquece, uma oportunidade acessível a todos, com investimento zero.</p>
+                </div>
+            </div>
+             <img src="images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto mt-10 h-12 w-auto">
+        </div>
+    </section>
+
+    <!-- =========== PÁGINA 3: MERCADO =========== -->
+    <section id="mercado" class="bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 16, 33, 0.8), rgba(0, 16, 33, 1)), url('images/cidade-noite.jpg');">
+        <div class="text-center max-w-4xl mx-auto bg-black/50 p-8 rounded-lg">
+            <h2 class="text-3xl md:text-5xl font-bold uppercase mb-4">Mercado de Aplicativos de Mobilidade</h2>
+            <p class="text-xl">Em 2024, o mercado global movimentou <span class="text-mrp-gold font-bold">100 bilhões de dólares</span>, e no Brasil, <span class="text-mrp-gold font-bold">10 bilhões</span>. Uma oportunidade em crescimento!</p>
+            <img src="images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto mt-10 h-12 w-auto">
+        </div>
+    </section>
+    
+    <!-- =========== PÁGINA 6: COMO FUNCIONA O MRP MOBI =========== -->
+    <section id="como-funciona" class="bg-mrp-blue">
+        <div class="text-center max-w-4xl mx-auto">
+            <img src="images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto mb-8 h-20 w-auto">
+            <h2 class="text-3xl md:text-5xl font-bold uppercase mb-8">Como funciona o MRP Mobi</h2>
+            <div class="space-y-4 text-2xl font-light">
+                <p>1. Baixe o app.</p>
+                <p>2. Convide os amigos.</p>
+                <p class="text-mrp-gold font-bold">3. Ganhe dinheiro.</p>
+            </div>
+            <p class="mt-8 text-xl">Simples assim! Entre no mundo da mobilidade e comece a lucrar!</p>
+        </div>
+    </section>
+
+    <!-- =========== PÁGINA 8: MODELO DE RECEITA =========== -->
+    <section id="receita" class="bg-mrp-dark-bg">
+        <div class="text-center max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold uppercase mb-4">Modelo de Receita</h2>
+            <p class="text-lg mb-8">Cobramos <span class="font-bold text-mrp-gold">21%</span> de cada corrida, dos quais <span class="font-bold text-mrp-gold">45%</span> são divididos em 7 níveis para a rede:</p>
+            <div class="bg-gray-200 text-gray-900 p-6 rounded-lg">
+                <div class="flex justify-around items-end">
+                    <div class="text-center"><div class="bg-orange-500 h-24 w-12 mx-auto"></div><p class="font-bold">10%</p><p>1º Nível</p></div>
+                    <div class="text-center"><div class="bg-orange-500 h-24 w-12 mx-auto"></div><p class="font-bold">10%</p><p>2º Nível</p></div>
+                    <div class="text-center"><div class="bg-orange-500 h-16 w-12 mx-auto"></div><p class="font-bold">5%</p><p>3º Nível</p></div>
+                    <div class="text-center"><div class="bg-orange-500 h-16 w-12 mx-auto"></div><p class="font-bold">5%</p><p>4º Nível</p></div>
+                    <div class="text-center"><div class="bg-orange-500 h-16 w-12 mx-auto"></div><p class="font-bold">5%</p><p>5º Nível</p></div>
+                    <div class="text-center"><div class="bg-orange-500 h-16 w-12 mx-auto"></div><p class="font-bold">5%</p><p>6º Nível</p></div>
+                    <div class="text-center"><div class="bg-orange-500 h-16 w-12 mx-auto"></div><p class="font-bold">5%</p><p>7º Nível</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== PÁGINA 11: GANHOS =========== -->
+    <section id="ganhos" class="bg-mrp-blue">
+        <div class="text-center max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold uppercase mb-4">Ganhos em 7 Gerações</h2>
+            <p class="mb-8">Simulação mínima de 2 corridas de R$ 10,00 no mês por pessoa.</p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left bg-mrp-dark-bg rounded-lg">
+                    <thead>
+                        <tr class="text-mrp-gold border-b border-mrp-blue">
+                            <th class="p-3">Nível</th>
+                            <th class="p-3">Pessoas</th>
+                            <th class="p-3">Cálculo</th>
+                            <th class="p-3">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-mrp-blue"> <td class="p-2">1</td> <td class="p-2">10</td> <td class="p-2">x R$0,42 (10%)</td> <td class="p-2">R$ 4,20</td> </tr>
+                        <tr class="border-b border-mrp-blue"> <td class="p-2">2</td> <td class="p-2">70</td> <td class="p-2">x R$0,42 (10%)</td> <td class="p-2">R$ 29,40</td> </tr>
+                        <tr class="border-b border-mrp-blue"> <td class="p-2">3</td> <td class="p-2">350</td> <td class="p-2">x R$0,21 (5%)</td> <td class="p-2">R$ 73,50</td> </tr>
+                        <tr class="border-b border-mrp-blue"> <td class="p-2">4</td> <td class="p-2">1.750</td> <td class="p-2">x R$0,21 (5%)</td> <td class="p-2">R$ 367,50</td> </tr>
+                        <tr class="border-b border-mrp-blue"> <td class="p-2">5</td> <td class="p-2">5.250</td> <td class="p-2">x R$0,21 (5%)</td> <td class="p-2">R$ 1.102,50</td> </tr>
+                        <tr class="border-b border-mrp-blue"> <td class="p-2">6</td> <td class="p-2">15.750</td> <td class="p-2">x R$0,21 (5%)</td> <td class="p-2">R$ 3.307,50</td> </tr>
+                        <tr class="border-b border-mrp-blue"> <td class="p-2">7</td> <td class="p-2">47.250</td> <td class="p-2">x R$0,21 (5%)</td> <td class="p-2">R$ 9.922,50</td> </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr class="font-bold text-mrp-gold text-xl">
+                            <td colspan="3" class="p-4 text-right">TOTAL</td>
+                            <td class="p-4">R$ 14.807,10</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== PÁGINA 12: CATEGORIAS (COM ÍCONES) =========== -->
+    <section id="categorias" class="bg-mrp-dark-bg">
+        <div class="text-center max-w-5xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold uppercase mb-8">Nossas Categorias</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 text-center">
+                <!-- Para cada categoria, um ícone e o texto -->
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="car" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">CARRO</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="bike" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">MOTO</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="package" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">ENTREGAS</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="taxi" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">TAXI</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="truck" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">FRETES</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="wrench" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">GUINCHO</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="plane" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">VIAGEM</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="person-standing" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">ELA E ELAS</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="tractor" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">RURAL</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="dog" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">PET</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="users" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">COMPARTILHADO</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="briefcase" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">EXECUTIVO</span>
+                </div>
+                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2">
+                    <i data-lucide="shopping-cart" class="w-10 h-10 text-mrp-gold"></i>
+                    <span class="font-semibold">SUPERMERCADO</span>
+                </div>
+            </div>
+            <img src="images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto mt-10 h-12 w-auto">
+        </div>
+    </section>
+    
+    <!-- =========== PÁGINA 14: CTA FINAL =========== -->
+    <section id="cta" class="bg-mrp-blue">
+        <div class="text-center max-w-4xl mx-auto">
+            <img src="images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto mb-8 h-20 w-auto">
+            <h2 class="text-3xl md:text-5xl font-bold uppercase mb-2">Bem-vindo ao MRP Mobi</h2>
+            <p class="text-xl text-mrp-gold mb-8">A MOBILIDADE QUE TE ENRIQUECE</p>
+            <p class="text-lg mb-8">Baixe o app, crie sua conta e comece a usar e lucrar. A oportunidade que você esperava!</p>
+            
+            <!-- 
+            ================================================================
+            !!! IMPORTANTE: TROQUE O LINK ABAIXO !!!
+            Este é o link que você vai alterar para cada um dos seus clientes.
+            Coloque o link de cadastro do seu cliente aqui.
+            ================================================================
+            -->
+            <a href="https://convite.mrpmobi.com.br/cadastro?uuid=6227 
+               class="bg-mrp-gold text-mrp-blue font-bold text-xl py-4 px-10 rounded-full inline-block hover:bg-yellow-300 transform hover:scale-105 transition duration-300 shadow-lg">
+                QUERO FAZER PARTE AGORA
+            </a>
+        </div>
+    </section>
+    
+    <!-- Script para ativar os ícones -->
+    <script>
+      lucide.createIcons();
+    </script>
+
+</body>
+</html>
