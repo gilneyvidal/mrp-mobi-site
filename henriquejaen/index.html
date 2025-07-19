@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MRP Mobi - A Oportunidade que Transforma Vidas</title>
+    <title>MRP Mobi - Construa a Sua Renda Automática</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,9 +15,6 @@
     
     <!-- Biblioteca de Animação (AOS) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Biblioteca de Gráficos (Chart.js) -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <!-- Configuração de Estilo Customizado com Tailwind -->
     <script>
@@ -47,83 +44,109 @@
         section {
             overflow-x: hidden;
         }
+        /* Estilo para o slider */
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            background: #FFD700;
+            cursor: pointer;
+            border-radius: 50%;
+            margin-top: -8px;
+        }
     </style>
 </head>
 
 <body class="bg-mrp-dark-bg text-mrp-light font-sans">
 
-    <!-- =========== SEÇÃO 1: HERÓI =========== -->
+    <!-- =========== SEÇÃO 1: HERÓI (TÍTULO OTIMIZADO) =========== -->
     <section id="inicio" class="min-h-screen flex items-center justify-center text-center p-6 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 16, 33, 0.85), rgba(0, 16, 33, 1)), url('/mrp-mobi-site/images/cidade-noite.jpg');">
         <div data-aos="fade-up">
             <img src="/mrp-mobi-site/images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto h-20 w-auto mb-6">
-            <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider">A Oportunidade que Pode Mudar a Sua Vida</h1>
-            <h2 class="text-2xl md:text-3xl font-semibold text-mrp-gold mt-2">Descubra como a mobilidade pode construir a sua independência financeira.</h2>
+            <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider">Ponha a Sua Renda no Piloto Automático.</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-mrp-gold mt-4">Descubra como a MRP Mobi o recompensa por cada corrida na sua rede, 24 horas por dia.</h2>
             <a href="#cta" class="mt-8 bg-mrp-gold text-mrp-blue font-bold text-xl py-4 px-10 rounded-full inline-block hover:bg-yellow-300 transform hover:scale-105 transition duration-300 shadow-lg">
-                QUERO SABER MAIS
+                QUERO COMEÇAR A GANHAR AGORA
             </a>
         </div>
     </section>
 
-    <!-- =========== SEÇÃO 2: O PROBLEMA E A OPORTUNIDADE =========== -->
-    <section id="oportunidade" class="py-20 px-6">
+    <!-- =========== SEÇÃO 2: BENEFÍCIOS CLAROS =========== -->
+    <section id="beneficios" class="py-20 px-6">
         <div class="container mx-auto max-w-5xl text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12" data-aos="fade-up">A vida oferece 3 caminhos. Qual é o seu?</h2>
-            <div class="grid md:grid-cols-3 gap-8 text-left">
-                <div class="bg-mrp-blue/30 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="font-bold text-xl mb-2 text-white">1. O Emprego Tradicional</h3>
-                    <p class="text-mrp-light/80">Trabalhar 40 anos para se reformar com 40% de um salário que nunca foi suficiente.</p>
+            <h2 class="text-3xl md:text-4xl font-bold mb-12" data-aos="fade-up">Menos Esforço, Mais Resultados.</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-mrp-blue inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                    <h3 class="font-bold text-2xl mb-2 text-white">Renda Passiva Real</h3>
+                    <p class="text-mrp-light/80">Ganhe dinheiro com as corridas da sua rede, mesmo quando não está a trabalhar ativamente.</p>
                 </div>
-                <div class="bg-mrp-blue/30 p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="font-bold text-xl mb-2 text-white">2. O Negócio Próprio</h3>
-                    <p class="text-mrp-light/80">Alto investimento, risco elevado e a necessidade de ser especialista em tudo.</p>
+                <div class="p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-mrp-blue inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
+                    <h3 class="font-bold text-2xl mb-2 text-white">Custo Zero para Começar</h3>
+                    <p class="text-mrp-light/80">Registo 100% gratuito. Você não investe dinheiro, apenas o seu tempo e a sua rede.</p>
                 </div>
-                <div class="bg-mrp-blue p-6 rounded-lg border-2 border-mrp-gold" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="font-bold text-xl mb-2 text-mrp-gold">3. A Oportunidade MRP Mobi</h3>
-                    <p class="">Um negócio inovador no mercado bilionário da mobilidade, com <span class="font-bold">investimento zero</span> e potencial ilimitado.</p>
+                <div class="p-6 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-mrp-blue inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg></div>
+                    <h3 class="font-bold text-2xl mb-2 text-white">Mercado Bilionário</h3>
+                    <p class="text-mrp-light/80">Entre numa das indústrias que mais crescem no Brasil e no mundo.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- =========== SEÇÃO 3: VÍDEO EXPLICATIVO =========== -->
-    <section id="video" class="py-20 px-6 bg-mrp-blue">
-        <div class="container mx-auto max-w-3xl text-center" data-aos="zoom-in">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Prefere ver em vídeo?</h2>
-            <p class="text-xl mb-8">Clique abaixo para ver uma explicação rápida de como a MRP Mobi funciona.</p>
-            <!-- Placeholder para o seu vídeo. Substitua o 'a' por um 'iframe' do YouTube/Vimeo quando tiver o vídeo -->
-            <a href="#" class="block bg-black rounded-lg aspect-video flex items-center justify-center group">
-                <div class="text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="text-white/70 group-hover:text-white transition-colors duration-300"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
-                    <p class="mt-4 text-white/80">Em breve: Vídeo Explicativo</p>
+    <!-- =========== SEÇÃO 3: COMO FUNCIONA EM 3 PASSOS =========== -->
+    <section id="passos" class="py-20 px-6 bg-mrp-blue">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12" data-aos="fade-up">Começar é mais fácil do que imagina.</h2>
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-mrp-gold/30" style="transform: translateY(-50%);"></div>
+                
+                <div class="relative p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-mrp-dark-bg inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold text-mrp-gold font-bold text-2xl">1</div>
+                    <h3 class="font-semibold text-xl mt-2">Registe-se Gratuitamente</h3>
                 </div>
-            </a>
+                <div class="relative p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-mrp-dark-bg inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold text-mrp-gold font-bold text-2xl">2</div>
+                    <h3 class="font-semibold text-xl mt-2">Partilhe o Seu Link</h3>
+                </div>
+                <div class="relative p-6 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-mrp-dark-bg inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold text-mrp-gold font-bold text-2xl">3</div>
+                    <h3 class="font-semibold text-xl mt-2">Comece a Ganhar</h3>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- =========== SEÇÃO 4: POTENCIAL DE GANHOS COM GRÁFICO =========== -->
-    <section id="ganhos" class="py-20 px-6">
-        <div class="container mx-auto max-w-6xl text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Como se Ganha Dinheiro?</h2>
-            <p class="text-xl mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Você ganha uma comissão sobre as corridas de toda a sua rede, em até 7 níveis. Com uma simulação mínima, veja o potencial de crescimento:</p>
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div id="ganhos-container" class="bg-mrp-blue p-8 md:p-12 rounded-lg border border-mrp-gold/50 order-2 md:order-1" data-aos="fade-right">
-                    <p class="text-2xl text-mrp-light/80 mb-2">Ganhos Mensais Totais Estimados</p>
-                    <p class="text-6xl md:text-7xl font-extrabold tracking-tight gradient-text">
-                        R$ <span data-final-value="14807.10">0</span>
-                    </p>
-                    <p class="mt-4 text-sm text-gray-500">Baseado em apenas 2 corridas de R$ 10,00 por pessoa da rede no mês.</p>
+    <!-- =========== SEÇÃO 4: SIMULADOR DE GANHOS INTERATIVO =========== -->
+    <section id="simulador" class="py-20 px-6">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Visualize o Seu Potencial.</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">A promessa é grande, mas os números são reais. Faça uma simulação e veja por si mesmo.</p>
+            
+            <div id="simulator-container" class="bg-mrp-blue p-8 rounded-lg border border-mrp-gold/50" data-aos="zoom-in-up">
+                <div class="mb-6">
+                    <label for="directInvites" class="block text-lg font-semibold mb-2">Quantas pessoas você consegue convidar diretamente?</label>
+                    <input type="range" id="directInvites" min="1" max="50" value="10" class="w-full h-2 bg-mrp-dark-bg rounded-lg appearance-none cursor-pointer">
+                    <div id="directInvitesValue" class="text-mrp-gold text-4xl font-bold mt-2">10</div>
+                    <p class="text-sm text-gray-400 mt-4">Agora, vamos assumir que cada pessoa da sua rede convida apenas outras 5...</p>
                 </div>
-                <div class="order-1 md:order-2" data-aos="fade-left">
-                    <canvas id="earningsChart"></canvas>
+
+                <div class="bg-mrp-dark-bg p-6 rounded-lg">
+                    <p class="text-2xl text-mrp-light/80 mb-2">Seu Potencial de Ganho Mensal seria:</p>
+                    <p class="text-6xl md:text-7xl font-extrabold tracking-tight gradient-text">
+                        R$ <span id="earningsResult">4,20</span>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- =========== SEÇÃO 5: PROVA SOCIAL (TESTEMUNHOS) =========== -->
+    <!-- =========== SEÇÃO 5: PROVA SOCIAL =========== -->
     <section id="testemunhos" class="py-20 px-6 bg-mrp-blue">
         <div class="container mx-auto max-w-5xl text-center" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12">O que Dizem os Nossos Parceiros</h2>
+            <h2 class="text-4xl font-bold mb-12">Junte-se a Milhares de Parceiros de Sucesso</h2>
             <div class="grid md:grid-cols-2 gap-8 text-left">
                 <div class="bg-mrp-dark-bg p-6 rounded-lg" data-aos="fade-right">
                     <p class="text-lg italic">"Eu era cético, mas decidi tentar. Hoje, os ganhos da minha rede na MRP Mobi já pagam as contas do meu carro. É uma renda extra real, a trabalhar para mim mesmo com o carro parado."</p>
@@ -137,42 +160,18 @@
         </div>
     </section>
 
-    <!-- =========== SEÇÃO 6: CATEGORIAS =========== -->
-    <section id="categorias" class="py-20 px-6">
-        <div class="text-center max-w-5xl mx-auto" data-aos="fade-up">
-            <h2 class="text-3xl md:text-4xl font-bold uppercase mb-8">Um Ecossistema Completo de Mobilidade</h2>
-            <div class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-5 gap-4 text-center">
-                 <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="M14 16.5V18a2 2 0 0 1-2 2h-6a2 2 0 0 1-2-2v-1.5"/><path d="M20 10h-5.5"/><path d="M4 10h5.5"/><path d="M10 10L12 5l2 5"/><path d="M12 10v6.5"/><circle cx="6" cy="16.5" r="2.5"/><circle cx="18" cy="16.5" r="2.5"/></svg><span class="font-semibold">CARRO</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><circle cx="18.5" cy="17.5" r="3.5"/><circle cx="5.5" cy="17.5" r="3.5"/><path d="M15 17.5h-1.5l-3-6-3 6H5"/><path d="m6 12 4-3 4 3"/></svg><span class="font-semibold">MOTO</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v2"/><path d="M21 10-10 4.5"/><path d="M3 10l10 5.5"/><path d="M12 22V13.5"/><path d="M20 18.5a2.5 2.5 0 0 1-5 0"/><path d="M20 18.5h-5"/></svg><span class="font-semibold">ENTREGAS</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="M10 17h4"/><path d="M21 17a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2z"/><path d="M12 15V9"/><path d="M7 9h10"/><path d="M10 9l-1.5 3L7 9"/></svg><span class="font-semibold">TAXI</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="M5 18H3c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2v10c0 1.1-.9 2-2 2h-1"/><path d="M14 18V6h4c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2h-4"/><path d="M10 18v-5h4v5"/><circle cx="7.5" cy="18.5" r="2.5"/><circle cx="17.5" cy="18.5" r="2.5"/></svg><span class="font-semibold">FRETES</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="M18.8 3.2a.6.6 0 0 0-.8 0l-12 12a.6.6 0 0 0 0 .8l6 6a.6.6 0 0 0 .8 0l12-12a.6.6 0 0 0 0-.8Z"/><path d="m2 2 5 5"/><path d="M16 8l2 2"/></svg><span class="font-semibold">GUINCHO</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg><span class="font-semibold">VIAGEM</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M18 6h-2.5"/><path d="M6 9v5.5"/><path d="m12 15-3.5-5.5"/><path d="M18 12.5V9H6"/></svg><span class="font-semibold">BIKE</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><circle cx="12" cy="5" r="3"/><path d="M12 8v7"/><path d="M12 15l-4 4"/><path d="M16 19l-4-4"/><path d="M5 22v-3a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v3"/></svg><span class="font-semibold">ELA E ELAS</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="M18 8h-3a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h3"/><path d="M10 8h1"/><path d="M10 12h1"/><path d="M10 16h1"/><path d="m2 9 3-3v10c0 1.1.9 2 2 2h1c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H5L2 1"/><path d="M14 6h2c1.1 0 2 .9 2 2v4c0 1.1-.9 2-2 2h-2v4c0 1.1-.9 2-2 2h-1c-1.1 0-2-.9-2-2v-4c0-1.1.9-2 2-2h2V6Z"/></svg><span class="font-semibold">RURAL</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><circle cx="11" cy="4" r="2"/><path d="M12 10a4 4 0 0 0-4.4 3.3L4 14a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1l-3.6-0.7A4 4 0 0 0 12 10z"/><path d="M10.3 20a2 2 0 1 1-2.6-2.6"/><path d="M16.7 20a2 2 0 1 0-2.6-2.6"/></svg><span class="font-semibold">PET</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span class="font-semibold">COMPARTILHADO</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><span class="font-semibold">EXECUTIVO</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="font-semibold">SUPERMERCADO</span></div>
-                <div class="flex flex-col items-center justify-center bg-mrp-blue p-4 rounded-lg space-y-2 transition-transform duration-300 hover:scale-110"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="M10 17h4"/><path d="M21 17a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2z"/><path d="M12 15V9"/><path d="M7 9h10"/><path d="M10 9l-1.5 3L7 9"/></svg><span class="font-semibold">TÁXI</span></div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- =========== SEÇÃO 7: CTA FINAL =========== -->
-    <section id="cta" class="py-20 px-6 bg-mrp-blue">
+    <!-- =========== SEÇÃO 6: CTA FINAL COM URGÊNCIA =========== -->
+    <section id="cta" class="py-20 px-6">
         <div class="container mx-auto max-w-4xl flex flex-col md:flex-row items-center gap-10" data-aos="fade-up">
             <div class="text-center md:text-left flex-1">
                 <img src="/mrp-mobi-site/images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto md:mx-0 mb-6 h-16 w-auto">
-                <h2 class="text-4xl md:text-5xl font-bold uppercase mb-2">Pronto para Começar?</h2>
-                <p class="text-xl text-mrp-gold mb-6">A sua jornada para a independência financeira começa agora.</p>
-                <p class="text-lg mb-8">Clique no botão, registe-se e junte-se à revolução da mobilidade que enriquece.</p>
+                <h2 class="text-4xl md:text-5xl font-bold uppercase mb-2">A Sua Oportunidade Começa Agora.</h2>
+                <p class="text-xl text-mrp-gold mb-6">Não espere mais para construir o seu futuro.</p>
+                <p class="text-lg mb-8">O seu registo é gratuito e imediato. Não perca tempo, comece a construir a sua rede hoje e saia na frente!</p>
                 
                 <a id="cta-button" href="#" 
                    class="bg-mrp-gold text-mrp-blue font-bold text-xl py-4 px-10 rounded-full inline-block hover:bg-yellow-300 transform hover:scale-105 transition duration-300 shadow-lg">
-                    REGISTAR-ME AGORA
+                    QUERO COMEÇAR A GANHAR AGORA (GRÁTIS)
                 </a>
             </div>
             <div class="flex-shrink-0" data-aos="zoom-in" data-aos-delay="200">
@@ -202,110 +201,38 @@
         once: true,
       });
 
-      // Lógica para o Contador e Gráfico Animados
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            // Anima o contador
-            const counter = entry.target.querySelector('span[data-final-value]');
-            if (counter && !counter.classList.contains('animated')) {
-              const finalValue = parseFloat(counter.dataset.finalValue);
-              animateCount(counter, finalValue);
-              counter.classList.add('animated'); 
-            }
-            // Anima o gráfico
-            const chartCanvas = document.getElementById('earningsChart');
-            if(chartCanvas && !chartCanvas.classList.contains('animated')){
-                createEarningsChart();
-                chartCanvas.classList.add('animated');
-            }
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.5 });
+      // Lógica para o Simulador de Ganhos
+      const slider = document.getElementById('directInvites');
+      const sliderValueDisplay = document.getElementById('directInvitesValue');
+      const earningsResultDisplay = document.getElementById('earningsResult');
+      
+      const commissionRates = [0.10, 0.10, 0.05, 0.05, 0.05, 0.05, 0.05];
+      const duplicationFactor = 5;
+      const valuePerRace = 20; // 2 corridas de R$ 10
+      const companyFee = 0.21;
+      const networkShare = 0.45;
 
-      const ganhosSection = document.getElementById('ganhos');
-      if (ganhosSection) {
-        observer.observe(ganhosSection);
+      function calculateEarnings(directInvites) {
+          let totalEarnings = 0;
+          let peopleAtLevel = directInvites;
+
+          for (let i = 0; i < 7; i++) {
+              let earningsAtLevel = peopleAtLevel * valuePerRace * companyFee * networkShare * commissionRates[i];
+              totalEarnings += earningsAtLevel;
+              peopleAtLevel *= duplicationFactor;
+          }
+          return totalEarnings;
       }
 
-      function animateCount(element, finalValue) {
-        let start = 0;
-        const duration = 2000;
-        const stepTime = 20;
-        const steps = duration / stepTime;
-        const increment = finalValue / steps;
-
-        const timer = setInterval(() => {
-          start += increment;
-          if (start >= finalValue) {
-            clearInterval(timer);
-            element.innerText = finalValue.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-          } else {
-            element.innerText = start.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-          }
-        }, stepTime);
+      function updateSimulator() {
+          const directInvites = parseInt(slider.value);
+          sliderValueDisplay.textContent = directInvites;
+          const totalEarnings = calculateEarnings(directInvites);
+          earningsResultDisplay.textContent = totalEarnings.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
       }
 
-      function createEarningsChart(){
-        const ctx = document.getElementById('earningsChart').getContext('2d');
-        const earningsData = {
-            labels: ['Nível 1', 'Nível 2', 'Nível 3', 'Nível 4', 'Nível 5', 'Nível 6', 'Nível 7'],
-            datasets: [{
-                label: 'Ganhos por Nível (R$)',
-                data: [4.20, 29.40, 73.50, 367.50, 1102.50, 3307.50, 9922.50],
-                backgroundColor: 'rgba(255, 215, 0, 0.8)',
-                borderColor: 'rgba(255, 215, 0, 1)',
-                borderWidth: 1
-            }]
-        };
-
-        new Chart(ctx, {
-            type: 'bar',
-            data: earningsData,
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                let label = context.dataset.label || '';
-                                if (label) {
-                                    label += ': ';
-                                }
-                                if (context.parsed.y !== null) {
-                                    label += new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(context.parsed.y);
-                                }
-                                return label;
-                            }
-                        }
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        ticks: {
-                            color: '#F5F5F5'
-                        },
-                        grid: {
-                            color: 'rgba(245, 245, 245, 0.1)'
-                        }
-                    },
-                    x: {
-                        ticks: {
-                            color: '#F5F5F5'
-                        },
-                         grid: {
-                            display: false
-                        }
-                    }
-                }
-            }
-        });
+      if(slider) {
+        slider.addEventListener('input', updateSimulator);
       }
       
       // Lógica para atualizar o botão e QR Code dinamicamente
@@ -323,6 +250,11 @@
         if (qrCodeImg) {
             const qrCodeAPI = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=";
             qrCodeImg.src = qrCodeAPI + encodeURIComponent(registrationURL);
+        }
+        
+        // Inicializa o simulador com o valor padrão
+        if(slider) {
+            updateSimulator();
         }
       });
     </script>
