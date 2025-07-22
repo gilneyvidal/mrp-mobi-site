@@ -61,9 +61,10 @@
 <body class="bg-mrp-dark-bg text-mrp-light font-sans">
 
     <!-- =========== SEÇÃO 1: HERÓI (TÍTULO OTIMIZADO) =========== -->
-    <section id="inicio" class="min-h-screen flex items-center justify-center text-center p-6 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 16, 33, 0.85), rgba(0, 16, 33, 1)), url('/mrp-mobi-site/images/cidade-noite.jpg');">
+    <!-- CORREÇÃO: Removido "/mrp-mobi-site" do caminho da imagem de fundo e do logo -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center text-center p-6 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 16, 33, 0.85), rgba(0, 16, 33, 1)), url('/images/cidade-noite.jpg');">
         <div data-aos="fade-up">
-            <img src="/mrp-mobi-site/images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto h-20 w-auto mb-6">
+            <img src="/images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto h-20 w-auto mb-6">
             <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider">Ponha a Sua Renda no Piloto Automático.</h1>
             <h2 class="text-2xl md:text-3xl font-semibold text-mrp-gold mt-4">Descubra como a MRP Mobi irá te recompensar por cada corrida na sua rede, 24 horas por dia.</h2>
             <a href="#cta" class="mt-8 bg-mrp-gold text-mrp-blue font-bold text-xl py-4 px-10 rounded-full inline-block hover:bg-yellow-300 transform hover:scale-105 transition duration-300 shadow-lg">
@@ -164,7 +165,8 @@
     <section id="cta" class="py-20 px-6">
         <div class="container mx-auto max-w-4xl flex flex-col md:flex-row items-center gap-10" data-aos="fade-up">
             <div class="text-center md:text-left flex-1">
-                <img src="/mrp-mobi-site/images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto md:mx-0 mb-6 h-16 w-auto">
+                <!-- CORREÇÃO: Removido "/mrp-mobi-site" do caminho do logo -->
+                <img src="/images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto md:mx-0 mb-6 h-16 w-auto">
                 <h2 class="text-4xl md:text-5xl font-bold uppercase mb-2">Sua Oportunidade Começa Agora.</h2>
                 <p class="text-xl text-mrp-gold mb-6">Não espere mais para construir o seu futuro.</p>
                 <p class="text-lg mb-8">O seu registro é gratuito e imediato. Não perca tempo, comece a construir a sua rede hoje e saia na frente!</p>
@@ -189,74 +191,74 @@
     <!-- Script da Biblioteca de Animação (AOS) -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      // =================================================================
-      // CONFIGURAÇÃO DA PÁGINA - ALTERE APENAS AQUI
-      // =================================================================
-      const clientUUID = "SEU_UUID_AQUI"; // <-- ÚNICO LOCAL PARA ALTERAR O CÓDIGO DO CLIENTE
-      // =================================================================
+     // =================================================================
+     // CONFIGURAÇÃO DA PÁGINA - ALTERE APENAS AQUI
+     // =================================================================
+     const clientUUID = "SEU_UUID_AQUI"; // <-- ÚNICO LOCAL PARA ALTERAR O CÓDIGO DO CLIENTE
+     // =================================================================
 
-      // Inicializa Animações
-      AOS.init({
-        duration: 800,
-        once: true,
-      });
+     // Inicializa Animações
+     AOS.init({
+       duration: 800,
+       once: true,
+     });
 
-      // Lógica para o Simulador de Ganhos
-      const slider = document.getElementById('directInvites');
-      const sliderValueDisplay = document.getElementById('directInvitesValue');
-      const earningsResultDisplay = document.getElementById('earningsResult');
-      
-      const commissionRates = [0.10, 0.10, 0.05, 0.05, 0.05, 0.05, 0.05];
-      const duplicationFactor = 5;
-      const valuePerRace = 20; // 2 corridas de R$ 10
-      const companyFee = 0.21;
-      const networkShare = 0.45;
+     // Lógica para o Simulador de Ganhos
+     const slider = document.getElementById('directInvites');
+     const sliderValueDisplay = document.getElementById('directInvitesValue');
+     const earningsResultDisplay = document.getElementById('earningsResult');
+     
+     const commissionRates = [0.10, 0.10, 0.05, 0.05, 0.05, 0.05, 0.05];
+     const duplicationFactor = 5;
+     const valuePerRace = 20; // 2 corridas de R$ 10
+     const companyFee = 0.21;
+     const networkShare = 0.45;
 
-      function calculateEarnings(directInvites) {
-          let totalEarnings = 0;
-          let peopleAtLevel = directInvites;
+     function calculateEarnings(directInvites) {
+         let totalEarnings = 0;
+         let peopleAtLevel = directInvites;
 
-          for (let i = 0; i < 7; i++) {
-              let earningsAtLevel = peopleAtLevel * valuePerRace * companyFee * networkShare * commissionRates[i];
-              totalEarnings += earningsAtLevel;
-              peopleAtLevel *= duplicationFactor;
-          }
-          return totalEarnings;
-      }
+         for (let i = 0; i < 7; i++) {
+             let earningsAtLevel = peopleAtLevel * valuePerRace * companyFee * networkShare * commissionRates[i];
+             totalEarnings += earningsAtLevel;
+             peopleAtLevel *= duplicationFactor;
+         }
+         return totalEarnings;
+     }
 
-      function updateSimulator() {
-          const directInvites = parseInt(slider.value);
-          sliderValueDisplay.textContent = directInvites;
-          const totalEarnings = calculateEarnings(directInvites);
-          earningsResultDisplay.textContent = totalEarnings.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-      }
+     function updateSimulator() {
+         const directInvites = parseInt(slider.value);
+         sliderValueDisplay.textContent = directInvites;
+         const totalEarnings = calculateEarnings(directInvites);
+         earningsResultDisplay.textContent = totalEarnings.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+     }
 
-      if(slider) {
-        slider.addEventListener('input', updateSimulator);
-      }
-      
-      // Lógica para atualizar o botão e QR Code dinamicamente
-      document.addEventListener('DOMContentLoaded', () => {
-        const baseURL = "https://convite.mrpmobi.com.br/cadastro?uuid=";
-        const registrationURL = baseURL + clientUUID;
+     if(slider) {
+       slider.addEventListener('input', updateSimulator);
+     }
+     
+     // Lógica para atualizar o botão e QR Code dinamicamente
+     document.addEventListener('DOMContentLoaded', () => {
+       const baseURL = "https://convite.mrpmobi.com.br/cadastro?uuid=";
+       const registrationURL = baseURL + clientUUID;
 
-        const ctaButton = document.getElementById('cta-button');
-        const qrCodeImg = document.getElementById('qr-code');
+       const ctaButton = document.getElementById('cta-button');
+       const qrCodeImg = document.getElementById('qr-code');
 
-        if (ctaButton) {
-            ctaButton.href = registrationURL;
-        }
+       if (ctaButton) {
+           ctaButton.href = registrationURL;
+       }
 
-        if (qrCodeImg) {
-            const qrCodeAPI = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=";
-            qrCodeImg.src = qrCodeAPI + encodeURIComponent(registrationURL);
-        }
-        
-        // Inicializa o simulador com o valor padrão
-        if(slider) {
-            updateSimulator();
-        }
-      });
+       if (qrCodeImg) {
+           const qrCodeAPI = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=";
+           qrCodeImg.src = qrCodeAPI + encodeURIComponent(registrationURL);
+       }
+       
+       // Inicializa o simulador com o valor padrão
+       if(slider) {
+           updateSimulator();
+       }
+     });
     </script>
 
 </body>
