@@ -1,1 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRP Mobi - Construa a Sua Renda Automática</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Biblioteca de Animação (AOS) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Configuração de Estilo Customizado com Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'mrp-blue': '#001f3f',
+                        'mrp-gold': '#FFD700',
+                        'mrp-light': '#F5F5F5',
+                        'mrp-dark-bg': '#001021',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-text {
+            background: linear-gradient(90deg, #FFD700, #F5F5F5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        section {
+            overflow-x: hidden;
+        }
+        /* Estilo para o slider */
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            background: #FFD700;
+            cursor: pointer;
+            border-radius: 50%;
+            margin-top: -8px;
+        }
+    </style>
+</head>
 
+<body class="bg-mrp-dark-bg text-mrp-light font-sans">
+
+    <!-- =========== SEÇÃO 1: HERÓI (TÍTULO OTIMIZADO) =========== -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center text-center p-6 bg-cover bg-center" style="background-image: linear-gradient(rgba(0, 16, 33, 0.85), rgba(0, 16, 33, 1)), url('/mrp-mobi-site/images/cidade-noite.jpg');">
+        <div data-aos="fade-up">
+            <img src="/mrp-mobi-site/images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto h-20 w-auto mb-6">
+            <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider">Ponha a Sua Renda no Piloto Automático.</h1>
+            <h2 class="text-2xl md:text-3xl font-semibold text-mrp-gold mt-4">Descubra como a MRP Mobi irá te recompensar por cada corrida na sua rede, 24 horas por dia.</h2>
+            <a href="#cta" class="mt-8 bg-mrp-gold text-mrp-blue font-bold text-xl py-4 px-10 rounded-full inline-block hover:bg-yellow-300 transform hover:scale-105 transition duration-300 shadow-lg">
+                QUERO COMEÇAR A GANHAR AGORA!
+            </a>
+        </div>
+    </section>
+
+    <!-- =========== SEÇÃO 2: BENEFÍCIOS CLAROS =========== -->
+    <section id="beneficios" class="py-20 px-6">
+        <div class="container mx-auto max-w-5xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12" data-aos="fade-up">Menos Esforço, Mais Resultados.</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-mrp-blue inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+                    <h3 class="font-bold text-2xl mb-2 text-white">Renda Passiva Real</h3>
+                    <p class="text-mrp-light/80">Ganhe dinheiro com as corridas da sua rede, mesmo quando não está trabalhando ativamente.</p>
+                </div>
+                <div class="p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-mrp-blue inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"/><line x1="8" y1="12" x2="16" y2="12"/></svg></div>
+                    <h3 class="font-bold text-2xl mb-2 text-white">Custo Zero para Começar</h3>
+                    <p class="text-mrp-light/80">Registro 100% gratuito. Você não investe dinheiro, apenas o seu tempo e a sua rede.</p>
+                </div>
+                <div class="p-6 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-mrp-blue inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-mrp-gold"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg></div>
+                    <h3 class="font-bold text-2xl mb-2 text-white">Mercado Bilionário movimenta em média R$483,3 bilhões por ano</h3>
+                    <p class="text-mrp-light/80">Entre em uma das indústrias que mais crescem no Brasil e no mundo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== SEÇÃO 3: COMO FUNCIONA EM 3 PASSOS =========== -->
+    <section id="passos" class="py-20 px-6 bg-mrp-blue">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12" data-aos="fade-up">Começar é mais fácil do que imagina.</h2>
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-mrp-gold/30" style="transform: translateY(-50%);"></div>
+                
+                <div class="relative p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-mrp-dark-bg inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold text-mrp-gold font-bold text-2xl">1</div>
+                    <h3 class="font-semibold text-xl mt-2">Registre-se Gratuitamente</h3>
+                </div>
+                <div class="relative p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-mrp-dark-bg inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold text-mrp-gold font-bold text-2xl">2</div>
+                    <h3 class="font-semibold text-xl mt-2">Compartilhe o Seu Link</h3>
+                </div>
+                <div class="relative p-6 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-mrp-dark-bg inline-block p-4 rounded-full mb-4 border-2 border-mrp-gold text-mrp-gold font-bold text-2xl">3</div>
+                    <h3 class="font-semibold text-xl mt-2">Comece a Ganhar</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== SEÇÃO 4: SIMULADOR DE GANHOS INTERATIVO =========== -->
+    <section id="simulador" class="py-20 px-6">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Visualize o Seu Potencial.</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">A promessa é grande, mas os números são reais. Faça uma simulação e veja por si mesmo.</p>
+            
+            <div id="simulator-container" class="bg-mrp-blue p-8 rounded-lg border border-mrp-gold/50" data-aos="zoom-in-up">
+                <div class="mb-6">
+                    <label for="directInvites" class="block text-lg font-semibold mb-2">Quantas pessoas você consegue convidar diretamente?</label>
+                    <input type="range" id="directInvites" min="1" max="50" value="10" class="w-full h-2 bg-mrp-dark-bg rounded-lg appearance-none cursor-pointer">
+                    <div id="directInvitesValue" class="text-mrp-gold text-4xl font-bold mt-2">5</div>
+                    <p class="text-sm text-gray-400 mt-4">Agora, vamos assumir que cada pessoa da sua rede convida apenas outras 5</p>
+                </div>
+
+                <div class="bg-mrp-dark-bg p-6 rounded-lg">
+                    <p class="text-2xl text-mrp-light/80 mb-2">Seu Potencial de Ganho Mensal seria:</p>
+                    <p class="text-6xl md:text-7xl font-extrabold tracking-tight gradient-text">
+                        R$ <span id="earningsResult">4,20</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =========== SEÇÃO 5: PROVA SOCIAL =========== -->
+    <section id="testemunhos" class="py-20 px-6 bg-mrp-blue">
+        <div class="container mx-auto max-w-5xl text-center" data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-12">Junte-se a Milhares de Parceiros de Sucesso</h2>
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="bg-mrp-dark-bg p-6 rounded-lg" data-aos="fade-right">
+                    <p class="text-lg italic">"Eu era cético, mas decidi tentar. Hoje, simulo os ganhos da minha rede na MRP Mobi e as projeções são de sucesso em pouco tempo. É uma renda extra real, vai proporcionar ganhos no automatico"</p>
+                    <p class="text-mrp-gold font-bold mt-4">- Carlos F., Motorista Parceiro</p>
+                </div>
+                <div class="bg-mrp-dark-bg p-6 rounded-lg" data-aos="fade-left">
+                    <p class="text-lg italic">"A melhor parte é a simplicidade. Eu compartilho o link da minha página e as pessoas registram-se. A ferramenta faz o trabalho de apresentação por mim. Já construí uma rede considerável em poucos dias."</p>
+                    <p class="text-mrp-gold font-bold mt-4">- Sandra P., Divulgadora</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== SEÇÃO 6: CTA FINAL COM URGÊNCIA =========== -->
+    <section id="cta" class="py-20 px-6">
+        <div class="container mx-auto max-w-4xl flex flex-col md:flex-row items-center gap-10" data-aos="fade-up">
+            <div class="text-center md:text-left flex-1">
+                <img src="/mrp-mobi-site/images/logo-mrp.png" alt="Logo MRP Mobi" class="mx-auto md:mx-0 mb-6 h-16 w-auto">
+                <h2 class="text-4xl md:text-5xl font-bold uppercase mb-2">Sua Oportunidade Começa Agora.</h2>
+                <p class="text-xl text-mrp-gold mb-6">Não espere mais para construir o seu futuro.</p>
+                <p class="text-lg mb-8">O seu registro é gratuito e imediato. Não perca tempo, comece a construir a sua rede hoje e saia na frente!</p>
+                
+                <a id="cta-button" href="#" 
+                   class="bg-mrp-gold text-mrp-blue font-bold text-xl py-4 px-10 rounded-full inline-block hover:bg-yellow-300 transform hover:scale-105 transition duration-300 shadow-lg">
+                    CLIQUE E REGISTRE-SE GRATUITAMENTE!
+                </a>
+            </div>
+            <div class="flex-shrink-0" data-aos="zoom-in" data-aos-delay="200">
+                <img id="qr-code" src="" alt="QR Code para registo" class="rounded-lg border-4 border-mrp-gold">
+                <p class="text-center mt-2 text-mrp-gold">Aponte a câmera e registre-se!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== RODAPÉ =========== -->
+    <footer class="bg-mrp-dark-bg text-center p-4 border-t border-mrp-blue/50">
+        <p class="text-sm text-gray-500">&copy; 2025 MRP Mobi - VIDAL DESIGN SOLUTIONS - Todos os direitos reservados.</p>
+    </footer>
+    
+    <!-- Script da Biblioteca de Animação (AOS) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // =================================================================
+      // CONFIGURAÇÃO DA PÁGINA - ALTERE APENAS AQUI
+      // =================================================================
+      const clientUUID = 17659; // <-- ÚNICO LOCAL PARA ALTERAR O CÓDIGO DO CLIENTE
+      // =================================================================
+
+      // Inicializa Animações
+      AOS.init({
+        duration: 800,
+        once: true,
+      });
+
+      // Lógica para o Simulador de Ganhos
+      const slider = document.getElementById('directInvites');
+      const sliderValueDisplay = document.getElementById('directInvitesValue');
+      const earningsResultDisplay = document.getElementById('earningsResult');
+      
+      const commissionRates = [0.10, 0.10, 0.05, 0.05, 0.05, 0.05, 0.05];
+      const duplicationFactor = 5;
+      const valuePerRace = 20; // 2 corridas de R$ 10
+      const companyFee = 0.21;
+      const networkShare = 0.45;
+
+      function calculateEarnings(directInvites) {
+          let totalEarnings = 0;
+          let peopleAtLevel = directInvites;
+
+          for (let i = 0; i < 7; i++) {
+              let earningsAtLevel = peopleAtLevel * valuePerRace * companyFee * networkShare * commissionRates[i];
+              totalEarnings += earningsAtLevel;
+              peopleAtLevel *= duplicationFactor;
+          }
+          return totalEarnings;
+      }
+
+      function updateSimulator() {
+          const directInvites = parseInt(slider.value);
+          sliderValueDisplay.textContent = directInvites;
+          const totalEarnings = calculateEarnings(directInvites);
+          earningsResultDisplay.textContent = totalEarnings.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      }
+
+      if(slider) {
+        slider.addEventListener('input', updateSimulator);
+      }
+      
+      // Lógica para atualizar o botão e QR Code dinamicamente
+      document.addEventListener('DOMContentLoaded', () => {
+        const baseURL = "https://convite.mrpmobi.com.br/cadastro?uuid=";
+        const registrationURL = baseURL + clientUUID;
+
+        const ctaButton = document.getElementById('cta-button');
+        const qrCodeImg = document.getElementById('qr-code');
+
+        if (ctaButton) {
+            ctaButton.href = registrationURL;
+        }
+
+        if (qrCodeImg) {
+            const qrCodeAPI = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=";
+            qrCodeImg.src = qrCodeAPI + encodeURIComponent(registrationURL);
+        }
+        
+        // Inicializa o simulador com o valor padrão
+        if(slider) {
+            updateSimulator();
+        }
+      });
+    </script>
+
+</body>
+</html>
